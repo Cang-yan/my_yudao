@@ -1,0 +1,325 @@
+2022-11-11 22:02:57.389 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.i.yudao.server.YudaoServerApplication [0;39m | Starting YudaoServerApplication using Java 18.0.2 on LAPTOP-C1DBPVDJ with PID 8288 (D:\lizuchao\yunpingtai\archive_identif_platform\archive_identif_platform\yudao-server\target\classes started by zhaoxu in D:\lizuchao\yunpingtai\archive_identif_platform\archive_identif_platform)
+2022-11-11 22:02:57.392 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.i.yudao.server.YudaoServerApplication [0;39m | No active profile set, falling back to 1 default profile: "default"
+2022-11-11 22:03:00.295 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32m.s.d.r.c.RepositoryConfigurationDelegate[0;39m | Multiple Spring Data modules found, entering strict repository configuration mode
+2022-11-11 22:03:00.297 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32m.s.d.r.c.RepositoryConfigurationDelegate[0;39m | Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-11-11 22:03:00.323 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32m.s.d.r.c.RepositoryConfigurationDelegate[0;39m | Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-11-11 22:03:01.174 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mptablePropertiesBeanFactoryPostProcessor[0;39m | Post-processing PropertySource instances
+2022-11-11 22:03:01.175 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.EncryptablePropertySourceConverter[0;39m | Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2022-11-11 22:03:01.177 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.EncryptablePropertySourceConverter[0;39m | Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2022-11-11 22:03:01.177 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.EncryptablePropertySourceConverter[0;39m | Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2022-11-11 22:03:01.180 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.EncryptablePropertySourceConverter[0;39m | Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-11-11 22:03:01.181 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.EncryptablePropertySourceConverter[0;39m | Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-11-11 22:03:01.182 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.EncryptablePropertySourceConverter[0;39m | Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-11-11 22:03:01.182 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.EncryptablePropertySourceConverter[0;39m | Converting PropertySource Config resource 'class path resource [application.yaml]' via location 'optional:classpath:/' (document #2) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-11-11 22:03:01.182 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.EncryptablePropertySourceConverter[0;39m | Converting PropertySource Config resource 'class path resource [application.yaml]' via location 'optional:classpath:/' (document #1) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-11-11 22:03:01.182 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.EncryptablePropertySourceConverter[0;39m | Converting PropertySource Config resource 'class path resource [application.yaml]' via location 'optional:classpath:/' (document #0) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-11-11 22:03:01.493 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'lock4j-com.baomidou.lock.spring.boot.autoconfigure.Lock4jProperties' of type [com.baomidou.lock.spring.boot.autoconfigure.Lock4jProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:01.511 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'com.baomidou.lock.spring.boot.autoconfigure.LockAutoConfiguration' of type [com.baomidou.lock.spring.boot.autoconfigure.LockAutoConfiguration$$EnhancerBySpringCGLIB$$59fde4e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:01.546 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'com.baomidou.lock.spring.boot.autoconfigure.RedissonLockAutoConfiguration' of type [com.baomidou.lock.spring.boot.autoconfigure.RedissonLockAutoConfiguration$$EnhancerBySpringCGLIB$$d84e590e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:01.576 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'spring.redis.redisson-org.redisson.spring.starter.RedissonProperties' of type [org.redisson.spring.starter.RedissonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:01.593 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:01.609 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'org.redisson.spring.starter.RedissonAutoConfiguration' of type [org.redisson.spring.starter.RedissonAutoConfiguration$$EnhancerBySpringCGLIB$$567fe338] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.109 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32morg.redisson.Version                    [0;39m | Redisson 3.17.7
+2022-11-11 22:03:02.511 | [34m INFO 8288[0;39m | [1;33mredisson-netty-2-6 [TID: N/A][0;39m [1;32mo.r.c.pool.MasterPubSubConnectionPool   [0;39m | 1 connections initialized for localhost/127.0.0.1:6379
+2022-11-11 22:03:02.540 | [34m INFO 8288[0;39m | [1;33mredisson-netty-2-20 [TID: N/A][0;39m [1;32mo.r.c.pool.MasterConnectionPool         [0;39m | 24 connections initialized for localhost/127.0.0.1:6379
+2022-11-11 22:03:02.615 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'redisson' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.641 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'redissonLockExecutor' of type [com.baomidou.lock.executor.RedissonLockExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.654 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'lockTemplate' of type [com.baomidou.lock.LockTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.663 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'lockKeyBuilder' of type [com.baomidou.lock.DefaultLockKeyBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.672 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'cn.iocoder.yudao.framework.lock4j.config.YudaoLock4jConfiguration' of type [cn.iocoder.yudao.framework.lock4j.config.YudaoLock4jConfiguration$$EnhancerBySpringCGLIB$$70fef373] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.686 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'lockFailureStrategy' of type [cn.iocoder.yudao.framework.lock4j.core.DefaultLockFailureStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.695 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'lockInterceptor' of type [com.baomidou.lock.aop.LockInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.696 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'lockAnnotationAdvisor' of type [com.baomidou.lock.aop.LockAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.707 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.720 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$94f26f07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:02.747 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.091 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration' of type [cn.iocoder.yudao.framework.datapermission.config.YudaoDataPermissionAutoConfiguration$$EnhancerBySpringCGLIB$$2dbbdc04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.107 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'dataPermissionAnnotationAdvisor' of type [cn.iocoder.yudao.framework.datapermission.core.aop.DataPermissionAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.108 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'cn.iocoder.yudao.framework.jackson.config.YudaoJacksonAutoConfiguration' of type [cn.iocoder.yudao.framework.jackson.config.YudaoJacksonAutoConfiguration$$EnhancerBySpringCGLIB$$59b926ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.139 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration' of type [cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration$$EnhancerBySpringCGLIB$$8c563da9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.165 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'cn.iocoder.yudao.framework.swagger.config.YudaoSwaggerAutoConfiguration' of type [cn.iocoder.yudao.framework.swagger.config.YudaoSwaggerAutoConfiguration$$EnhancerBySpringCGLIB$$740869e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.194 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'cn.iocoder.yudao.framework.tenant.config.YudaoTenantAutoConfiguration' of type [cn.iocoder.yudao.framework.tenant.config.YudaoTenantAutoConfiguration$$EnhancerBySpringCGLIB$$8dc8c4c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.274 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.filter.DefaultLazyPropertyFilter  [0;39m | Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-11-11 22:03:03.350 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.r.DefaultLazyPropertyResolver     [0;39m | Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-11-11 22:03:03.353 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.u.j.d.DefaultLazyPropertyDetector     [0;39m | Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-11-11 22:03:03.359 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.376 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'cn.iocoder.yudao.framework.mybatis.config.YudaoMybatisAutoConfiguration' of type [cn.iocoder.yudao.framework.mybatis.config.YudaoMybatisAutoConfiguration$$EnhancerBySpringCGLIB$$468a5ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.399 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'mybatisPlusInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.410 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.426 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceCreatorAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceCreatorAutoConfiguration$$EnhancerBySpringCGLIB$$bac62f11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.443 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceCreatorAutoConfiguration$HikariDataSourceCreatorConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceCreatorAutoConfiguration$HikariDataSourceCreatorConfiguration$$EnhancerBySpringCGLIB$$180aa1a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.459 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'dataSourceInitEvent' of type [com.baomidou.dynamic.datasource.event.EncDataSourceInitEvent] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.464 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'hikariDataSourceCreator' of type [com.baomidou.dynamic.datasource.creator.HikariDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.472 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceCreatorAutoConfiguration$DruidDataSourceCreatorConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceCreatorAutoConfiguration$DruidDataSourceCreatorConfiguration$$EnhancerBySpringCGLIB$$52d9a3be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.489 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'druidDataSourceCreator' of type [com.baomidou.dynamic.datasource.creator.DruidDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.496 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'basicDataSourceCreator' of type [com.baomidou.dynamic.datasource.creator.BasicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.504 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'jndiDataSourceCreator' of type [com.baomidou.dynamic.datasource.creator.JndiDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.507 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'dataSourceCreator' of type [com.baomidou.dynamic.datasource.creator.DefaultDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.510 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'ymlDynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.514 | [31m WARN 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.b.d.d.DynamicRoutingDataSource        [0;39m | dynamic-datasource initial loaded [0] datasource,Please add your primary datasource or check your configuration
+2022-11-11 22:03:03.514 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:03.546 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'defaultMetaObjectHandler' of type [cn.iocoder.yudao.framework.mybatis.core.handler.DefaultDBFieldHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.535 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.545 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.597 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'tenantMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.608 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'tenantMapper' of type [jdk.proxy2.$Proxy133] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.668 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'tenantPackageMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.670 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'tenantPackageMapper' of type [jdk.proxy2.$Proxy135] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.685 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'tenantPackageServiceImpl' of type [cn.iocoder.yudao.module.system.service.tenant.TenantPackageServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.752 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.753 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'roleMenuMapper' of type [jdk.proxy2.$Proxy142] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.769 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'roleMenuBatchInsertMapper' of type [cn.iocoder.yudao.module.system.dal.mysql.permission.RoleMenuBatchInsertMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.823 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.825 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'userRoleMapper' of type [jdk.proxy2.$Proxy143] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.840 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'userRoleBatchInsertMapper' of type [cn.iocoder.yudao.module.system.dal.mysql.permission.UserRoleBatchInsertMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.913 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.918 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'menuMapper' of type [jdk.proxy2.$Proxy145] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.947 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'cn.iocoder.yudao.framework.mq.config.YudaoMQAutoConfiguration' of type [cn.iocoder.yudao.framework.mq.config.YudaoMQAutoConfiguration$$EnhancerBySpringCGLIB$$18ef3b24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:04.975 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'redissonConnectionFactory' of type [org.redisson.spring.data.connection.RedissonConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:05.054 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'stringRedisTemplate' of type [org.springframework.data.redis.core.StringRedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:05.098 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'tenantRedisMessageInterceptor' of type [cn.iocoder.yudao.framework.tenant.core.mq.TenantRedisMessageInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:05.106 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'redisMQTemplate' of type [cn.iocoder.yudao.framework.mq.core.RedisMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:05.109 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mtrationDelegate$BeanPostProcessorChecker[0;39m | Bean 'menuProducer' of type [cn.iocoder.yudao.module.system.mq.producer.permission.MenuProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-11 22:03:05.111 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.i.y.m.s.s.permission.MenuServiceImpl  [0;39m | [loadMenuIfUpdate][首次加载全量菜单]
+2022-11-11 22:03:05.159 | [31m WARN 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mConfigServletWebServerApplicationContext[0;39m | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobHandlerBeanPostProcessor' defined in class path resource [cn/iocoder/yudao/framework/tenant/config/YudaoTenantAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jobHandlerBeanPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tenantFrameworkService' defined in class path resource [cn/iocoder/yudao/framework/tenant/config/YudaoTenantAutoConfiguration.class]: Unsatisfied dependency expressed through method 'tenantFrameworkService' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tenantApiImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tenantServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'permissionServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'menuServiceImpl': Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/permission/MenuMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper.selectList
+### The error occurred while executing a query
+### Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+2022-11-11 22:03:05.159 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.b.d.d.DynamicRoutingDataSource        [0;39m | dynamic-datasource start closing ....
+2022-11-11 22:03:05.160 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mc.b.d.d.DynamicRoutingDataSource        [0;39m | dynamic-datasource all closed success,bye
+2022-11-11 22:03:05.196 | [34m INFO 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mConditionEvaluationReportLoggingListener[0;39m | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-11 22:03:05.246 | [1;31mERROR 8288[0;39m | [1;33mmain [TID: N/A][0;39m [1;32mo.s.boot.SpringApplication              [0;39m | Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobHandlerBeanPostProcessor' defined in class path resource [cn/iocoder/yudao/framework/tenant/config/YudaoTenantAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jobHandlerBeanPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tenantFrameworkService' defined in class path resource [cn/iocoder/yudao/framework/tenant/config/YudaoTenantAutoConfiguration.class]: Unsatisfied dependency expressed through method 'tenantFrameworkService' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tenantApiImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tenantServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'permissionServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'menuServiceImpl': Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/permission/MenuMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper.selectList
+### The error occurred while executing a query
+### Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at cn.iocoder.yudao.server.YudaoServerApplication.main(YudaoServerApplication.java:24)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tenantFrameworkService' defined in class path resource [cn/iocoder/yudao/framework/tenant/config/YudaoTenantAutoConfiguration.class]: Unsatisfied dependency expressed through method 'tenantFrameworkService' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tenantApiImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tenantServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'permissionServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'menuServiceImpl': Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/permission/MenuMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper.selectList
+### The error occurred while executing a query
+### Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tenantApiImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tenantServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'permissionServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'menuServiceImpl': Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/permission/MenuMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper.selectList
+### The error occurred while executing a query
+### Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tenantServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'permissionServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'menuServiceImpl': Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/permission/MenuMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper.selectList
+### The error occurred while executing a query
+### Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'permissionServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'menuServiceImpl': Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/permission/MenuMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper.selectList
+### The error occurred while executing a query
+### Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'permissionServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'menuServiceImpl': Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/permission/MenuMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper.selectList
+### The error occurred while executing a query
+### Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 77 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'menuServiceImpl': Invocation of init method failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/permission/MenuMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper.selectList
+### The error occurred while executing a query
+### Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 93 common frames omitted
+Caused by: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/permission/MenuMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper.selectList
+### The error occurred while executing a query
+### Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy131.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy145.selectList(Unknown Source)
+	at cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX.selectList(BaseMapperX.java:59)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:731)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$DefaultMethodInvoker.invoke(MybatisMapperProxy.java:162)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy145.selectList(Unknown Source)
+	at cn.iocoder.yudao.module.system.service.permission.MenuServiceImpl.loadMenuIfUpdate(MenuServiceImpl.java:132)
+	at cn.iocoder.yudao.module.system.service.permission.MenuServiceImpl.initLocalCache(MenuServiceImpl.java:89)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	... 110 common frames omitted
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+### The error may exist in cn/iocoder/yudao/module/system/dal/mysql/permission/MenuMapper.java (best guess)
+### The error may involve cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper.selectList
+### The error occurred while executing a query
+### Cause: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:153)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 129 common frames omitted
+Caused by: com.baomidou.dynamic.datasource.exception.CannotFindDataSourceException: dynamic-datasource can not find primary datasource
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.determinePrimaryDataSource(DynamicRoutingDataSource.java:97)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.getDataSource(DynamicRoutingDataSource.java:126)
+	at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.determineDataSource(DynamicRoutingDataSource.java:83)
+	at com.baomidou.dynamic.datasource.ds.AbstractRoutingDataSource.getConnection(AbstractRoutingDataSource.java:55)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at jdk.proxy2/jdk.proxy2.$Proxy151.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	... 134 common frames omitted
+

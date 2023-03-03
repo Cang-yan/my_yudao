@@ -1,0 +1,362 @@
+<template>
+  <div class="app-container">
+
+    <!-- 搜索工作栏 -->
+    <!-- <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch" label-width="68px">
+      <el-form-item label="创建时间" prop="createTime">
+        <el-date-picker v-model="queryParams.createTime" style="width: 240px" value-format="yyyy-MM-dd HH:mm:ss"
+          type="daterange" range-separator="-" start-placeholder="开始日期" end-placeholder="结束日期"
+          :default-time="['00:00:00', '23:59:59']" />
+      </el-form-item>
+      <el-form-item label="标注方案名" prop="storeName">
+        <el-input v-model="queryParams.storeName" placeholder="请输入标注方案名" clearable @keyup.enter.native="handleQuery" />
+      </el-form-item>
+      <el-form-item label="用户id" prop="userId">
+        <el-input v-model="queryParams.userId" placeholder="请输入用户id" clearable @keyup.enter.native="handleQuery" />
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" icon="el-icon-search" @click="handleQuery">搜索</el-button>
+        <el-button icon="el-icon-refresh" @click="resetQuery">重置</el-button>
+      </el-form-item>
+    </el-form> -->
+
+    <!-- 操作工具栏 -->
+    <el-row :gutter="10" class="mb8">
+      <el-col :span="1.5">
+        <el-button type="primary" plain icon="el-icon-plus" size="mini" @click="handleAdd">新增</el-button>
+      </el-col>
+      <el-col :span="1.5">
+        <el-button type="warning" plain icon="el-icon-download" size="mini" @click="handleExport"
+          :loading="exportLoading">导出</el-button>
+      </el-col>
+      <right-toolbar :showSearch.sync="showSearch" @queryTable="getList"></right-toolbar>
+    </el-row>
+
+    <!-- 列表 -->
+    <el-table v-loading="loading" :data="list">
+      <el-table-column label="编号" align="center" prop="id" />
+      <el-table-column label="创建时间" align="center" prop="createTime" width="180">
+        <template slot-scope="scope">
+          <span>{{ parseTime(scope.row.createTime) }}</span>
+        </template>
+      </el-table-column>
+      <el-table-column label="标注方案名" align="center" prop="storeName" />
+      <el-table-column label="用户id" align="center" prop="userId" />
+      <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
+        <template slot-scope="scope">
+          <el-button size="mini" type="text" icon="el-icon-edit" @click="handleUpdate(scope.row)">修改</el-button>
+          <el-button size="mini" type="text" icon="el-icon-delete" @click="handleDelete(scope.row)">删除</el-button>
+          <el-button size="mini" type="text" icon="el-icon-delete" @click="handleDetail(scope.row)">查看详情</el-button>
+        </template>
+      </el-table-column>
+    </el-table>
+    <!-- 分页组件 -->
+    <pagination v-show="total > 0" :total="total" :page.sync="queryParams.pageNo" :limit.sync="queryParams.pageSize"
+      @pagination="getList" />
+
+    <!-- 对话框(添加 / 修改) -->
+    <el-dialog :title="title" :visible.sync="open" width="500px" v-dialogDrag append-to-body>
+      <el-form ref="form" :model="form" :rules="rules" label-width="100px">
+        <el-form-item label="标注方案名" prop="storeName">
+          <el-input v-model="form.storeName" placeholder="请输入标注方案名" />
+        </el-form-item>
+        <!-- <el-form-item label="用户id" prop="userId">
+          <el-input v-model="form.userId" placeholder="请输入用户id" />
+        </el-form-item> -->
+      </el-form>
+      <div slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="submitForm">确 定</el-button>
+        <el-button @click="cancel">取 消</el-button>
+      </div>
+    </el-dialog>
+
+    <el-dialog :title="'元标注'" :visible.sync="detailOpen" width="1000px" v-dialogDrag append-to-body>
+
+      <el-row :gutter="10" class="mb8">
+        <el-col :span="1.5">
+          <el-button type="primary" plain icon="el-icon-plus" size="mini" @click="elhandleAdd">新增</el-button>
+        </el-col>
+        <!-- <el-col :span="1.5">
+          <el-button type="warning" plain icon="el-icon-download" size="mini" @click="handleExport"
+            :loading="exportLoading" v-hasPermi="['identity:tags-meta:export']">导出</el-button>
+        </el-col> -->
+        <!-- <right-toolbar :showSearch.sync="showSearch" @queryTable="getList"></right-toolbar> -->
+      </el-row>
+
+      <el-table :data="metaList" v-loading="elLoading">
+        <el-table-column label="编号" align="center" prop="id" />
+        <el-table-column label="创建时间" align="center" prop="createTime" width="180">
+          <template slot-scope="scope">
+            <span>{{ parseTime(scope.row.createTime) }}</span>
+          </template>
+        </el-table-column>
+        <el-table-column label="标注内容" align="center" prop="tagsText" />
+        <el-table-column label="标注库id" align="center" prop="tagsStoreId" />
+        <el-table-column label="用户id" align="center" prop="userId" />
+        <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
+          <template slot-scope="scope">
+            <el-button size="mini" type="text" icon="el-icon-edit" @click="elhandleUpdate(scope.row)">修改</el-button>
+            <el-button size="mini" type="text" icon="el-icon-delete" @click="elhandleDelete(scope.row)">删除</el-button>
+          </template>
+        </el-table-column>
+      </el-table>
+      <pagination v-show="total > 0" :total="metaTotal" :page.sync="queryParams.pageNo"
+        :limit.sync="queryParams.pageSize" @pagination="elgetList" />
+    </el-dialog>
+
+    <el-dialog :title="subTitle" :visible.sync="elsubOpen" width="500px" v-dialogDrag append-to-body>
+      <el-form ref="elform" :model="elform" :rules="elrules" label-width="80px">
+        <el-form-item label="标注内容" prop="tagsText">
+          <el-input v-model="elform.tagsText" placeholder="请输入标注内容" />
+        </el-form-item>
+      </el-form>
+      <div slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="elsubmitForm">确 定</el-button>
+        <el-button @click="elcancel">取 消</el-button>
+      </div>
+    </el-dialog>
+  </div>
+</template>
+
+<script>
+import { createTagsStore, updateTagsStore, deleteTagsStore, getTagsStore, getTagsStorePage, exportTagsStoreExcel } from "@/api/identity/tagsStore";
+import { createTagsMeta, updateTagsMeta, deleteTagsMeta, getTagsMeta, getTagsMetaPage, exportTagsMetaExcel } from "@/api/identity/tagsMeta";
+
+export default {
+  name: "TagsStore",
+  components: {
+  },
+  data() {
+    return {
+      // 遮罩层
+      loading: true,
+      // 导出遮罩层
+      exportLoading: false,
+      // 显示搜索条件
+      showSearch: true,
+      // 总条数
+      total: 0,
+      // 用户标注库;列表
+      list: [],
+      // 弹出层标题
+      title: "",
+      // 是否显示弹出层
+      open: false,
+      // 查询参数
+      queryParams: {
+        pageNo: 1,
+        pageSize: 10,
+        createTime: [],
+        storeName: null,
+        userId: null,
+      },
+      // 表单参数
+      form: {},
+      // 表单校验
+      rules: {
+      },
+      detailOpen: false,
+      metaList: [],
+      elLoading: false,
+      metaTotal: 0,
+      elform: {},
+      // 表单校验
+      elrules: {
+      },
+      elsubOpen: false,
+      subTitle: '',
+      openSql: 0,
+      RuserId: null
+    };
+  },
+  created() {
+    this.RuserId = this.$store.state.user.id
+    this.getList();
+  },
+  methods: {
+    order(a, b) {
+      if (a.id > b.id) {
+        return -1
+      } else if (a.id < b.id) {
+        return 1
+      } else {
+        return 0
+      }
+    },
+    elcancel() {
+      this.elsubOpen = false
+    },
+    elhandleDelete(row) {
+      const id = row.id;
+      this.$modal.confirm('是否确认删除元标注编号为"' + id + '"的数据项?').then(function () {
+        return deleteTagsMeta(id);
+      }).then(() => {
+        this.elgetList();
+        this.$modal.msgSuccess("删除成功");
+      }).catch(() => { });
+    },
+    elhandleUpdate(row) {
+      const id = row.id;
+      this.subTitle = '修改元标注'
+      getTagsMeta(id).then(response => {
+        this.elform = response.data;
+        this.elsubOpen = true;
+      });
+    },
+    elsubmitForm() {
+      // console.log(this.$refs["elform"])
+      this.$refs["elform"].validate(valid => {
+        if (!valid) {
+          return;
+        }
+
+        const params = {
+          ...this.elform,
+          tagsStoreId: this.openSql
+        }
+        // 修改的提交
+        if (this.elform.id != null) {
+          updateTagsMeta(params).then(response => {
+            this.$modal.msgSuccess("修改成功");
+            this.elsubOpen = false;
+            this.elgetList();
+          });
+          return;
+        }
+        // 添加的提交
+        createTagsMeta({ ...params, userId: this.RuserId }).then(response => {
+          this.$modal.msgSuccess("新增成功");
+          this.elsubOpen = false;
+          this.elgetList();
+        });
+      });
+    },
+    elhandleAdd() {
+      this.subTitle = '新增元标注'
+      this.elform = {
+        tagsText: undefined,
+      };
+      this.elsubOpen = true;
+    },
+
+    elgetList(id) {
+      this.elLoading = true;
+      // console.log('...')
+      // 执行查询
+      const query = {
+        ...this.queryParams,
+        tagsStoreId: id,
+        userId: this.RuserId
+      }
+      getTagsMetaPage(query).then(response => {
+        this.metaList = response.data.list;
+        this.metaTotal = response.data.total;
+        this.elLoading = false;
+      });
+    },
+    handleDetail(row) {
+      const id = row.id
+      this.detailOpen = true;
+      this.elgetList(id)
+      this.openSql = id
+    },
+    /** 查询列表 */
+    getList() {
+      this.loading = true;
+      // 执行查询
+      getTagsStorePage({ ...this.queryParams, userId: this.RuserId }).then(response => {
+        this.list = response.data.list;
+        this.total = response.data.total;
+        this.loading = false;
+      });
+    },
+    /** 取消按钮 */
+    cancel() {
+      this.open = false;
+      this.reset();
+    },
+    /** 表单重置 */
+    reset() {
+      this.form = {
+        id: undefined,
+        storeName: undefined,
+        userId: undefined,
+      };
+      this.resetForm("form");
+    },
+    /** 搜索按钮操作 */
+    handleQuery() {
+      this.queryParams.pageNo = 1;
+      this.getList();
+    },
+    /** 重置按钮操作 */
+    resetQuery() {
+      this.resetForm("queryForm");
+      this.handleQuery();
+    },
+    /** 新增按钮操作 */
+    handleAdd() {
+      this.reset();
+      this.open = true;
+      this.title = "添加用户标注库";
+    },
+    /** 修改按钮操作 */
+    handleUpdate(row) {
+      this.reset();
+      const id = row.id;
+      getTagsStore(id).then(response => {
+        this.form = response.data;
+        this.open = true;
+        this.title = "修改用户标注库;";
+      });
+    },
+    /** 提交按钮 */
+    submitForm() {
+      this.$refs["form"].validate(valid => {
+        if (!valid) {
+          return;
+        }
+        // 修改的提交
+        if (this.form.id != null) {
+          updateTagsStore(this.form).then(response => {
+            this.$modal.msgSuccess("修改成功");
+            this.open = false;
+            this.getList();
+          });
+          return;
+        }
+        // 添加的提交
+        createTagsStore({ ...this.form, userId: this.RuserId }).then(response => {
+          this.$modal.msgSuccess("新增成功");
+          this.open = false;
+          this.getList();
+        });
+      });
+    },
+    /** 删除按钮操作 */
+    handleDelete(row) {
+      const id = row.id;
+      this.$modal.confirm('是否确认删除用户标注库;编号为"' + id + '"的数据项?').then(function () {
+        return deleteTagsStore(id);
+      }).then(() => {
+        this.getList();
+        this.$modal.msgSuccess("删除成功");
+      }).catch(() => { });
+    },
+    /** 导出按钮操作 */
+    handleExport() {
+      // 处理查询参数
+      let params = { ...this.queryParams };
+      params.pageNo = undefined;
+      params.pageSize = undefined;
+      this.$modal.confirm('是否确认导出所有用户标注库;数据项?').then(() => {
+        this.exportLoading = true;
+        return exportTagsStoreExcel(params);
+      }).then(response => {
+        this.$download.excel(response, '用户标注库;.xls');
+        this.exportLoading = false;
+      }).catch(() => { });
+    }
+  }
+};
+</script>
